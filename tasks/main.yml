@@ -1,0 +1,14 @@
+---
+
+- name: install pkgs
+  ansible.builtin.apt:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - rclone
+
+
+
+
+
+
